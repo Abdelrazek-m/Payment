@@ -1,3 +1,4 @@
 class ApiKeys{
   static const secretKey='sk_test_51ONQKAL3mE1v9sDguN4xCE6yN7PVjXviM0HaClijShjFiGgqe7IobWvkWP7ZvF7U7hXssjNBPQIhKkPRughLEpbJ00yuzo7T1A';
+  static const publishableKey='pk_test_51ONQKAL3mE1v9sDgNKVHrS5Z9h6dpampaRm9WU9izj0o7P4oYv8vngRsTSnYSDc0DgnDnnMrPPVbdF8HkrXYRPm700EYEoCeyq';
 }

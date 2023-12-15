@@ -1,5 +1,7 @@
-
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:payment/features/checkout/data/repos/checkout_repo_imple.dart';
+import 'package:payment/features/checkout/presentation/manger/cubit/payment_cubit.dart';
 import 'widgets/custom_app_bar.dart';
 import 'widgets/custom_button.dart';
 import 'widgets/custom_modal_bottom_sheet.dart';
@@ -36,10 +38,12 @@ class HomeView extends StatelessWidget {
                 // Navigator.pushNamed(context, PaymentDetailsView.id);
                 showModalBottomSheet(
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(16)
-                  ),
+                      borderRadius: BorderRadius.circular(16)),
                   context: context,
-                  builder: (ctx) => const CustomModalBottomSheet(),
+                  builder: (ctx) =>  BlocProvider(
+                    create: (context) => PaymentCubit(CheckoutRepoImple()) ,
+                    child: const CustomModalBottomSheet(),
+                  ),
                 );
               },
             ),
@@ -50,4 +54,3 @@ class HomeView extends StatelessWidget {
     );
   }
 }
- 
