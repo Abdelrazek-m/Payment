@@ -4,6 +4,7 @@ import 'package:payment/views/payment_details_view.dart';
 import 'package:payment/views/think_you_view.dart';
 
 void main() {
+  
   runApp(const PaymentApp());
 }
 
@@ -24,3 +25,4 @@ class PaymentApp extends StatelessWidget {
     );
   }
 }
+
