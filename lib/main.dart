@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:payment/views/home_view.dart';
-import 'package:payment/views/payment_details_view.dart';
-import 'package:payment/views/think_you_view.dart';
+import 'package:payment/features/checkout/presentation/views/home_view.dart';
+import 'package:payment/features/checkout/presentation/views/payment_details_view.dart';
+import 'package:payment/features/checkout/presentation/views/think_you_view.dart';
 
 void main() {
   

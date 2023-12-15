@@ -3,8 +3,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:payment/core/utils/styles.dart';
-import 'package:payment/widgets/thank_view_into.dart';
-import 'package:payment/widgets/total_price.dart';
+import 'package:payment/features/checkout/presentation/views/widgets/thank_view_into.dart';
+import 'package:payment/features/checkout/presentation/views/widgets/total_price.dart';
 
 class ThankYouViewData extends StatelessWidget {
   const ThankYouViewData({

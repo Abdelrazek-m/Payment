@@ -1,10 +1,10 @@
 
 import 'package:flutter/material.dart';
-import '../widgets/custom_app_bar.dart';
-import '../widgets/custom_button.dart';
-import '../widgets/custom_modal_bottom_sheet.dart';
-import '../widgets/order_into_item.dart';
-import '../widgets/total_price.dart';
+import 'widgets/custom_app_bar.dart';
+import 'widgets/custom_button.dart';
+import 'widgets/custom_modal_bottom_sheet.dart';
+import 'widgets/order_into_item.dart';
+import 'widgets/total_price.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});

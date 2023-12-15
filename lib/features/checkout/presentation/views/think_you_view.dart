@@ -2,9 +2,9 @@
 
 import 'package:dotted_dashed_line/dotted_dashed_line.dart';
 import 'package:flutter/material.dart';
-import 'package:payment/widgets/custom_app_bar.dart';
+import 'package:payment/features/checkout/presentation/views/widgets/custom_app_bar.dart';
 
-import '../widgets/thank_you_view_data.dart';
+import 'widgets/thank_you_view_data.dart';
 
 class ThinkYouView extends StatelessWidget {
   const ThinkYouView({super.key});

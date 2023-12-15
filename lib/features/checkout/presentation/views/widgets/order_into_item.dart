@@ -1,13 +1,12 @@
 
 import 'package:flutter/material.dart';
 
-import '../core/utils/styles.dart';
+import '../../../../../core/utils/styles.dart';
 
-class TotalPrice extends StatelessWidget {
-  const TotalPrice({
+class OrderInfoItem extends StatelessWidget {
+  const OrderInfoItem({
     super.key, required this.title, required this.price,
   });
-  
   final String title;
   final double price;
   @override
@@ -15,8 +14,8 @@ class TotalPrice extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Text(title, style: MyStyles.styleBold24),
-        Text('\$$price', style: MyStyles.styleBold24),
+        Text(title, style: MyStyles.style18),
+        Text('\$$price', style: MyStyles.style18),
       ],
     );
   }
