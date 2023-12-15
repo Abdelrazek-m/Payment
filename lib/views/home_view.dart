@@ -1,7 +1,5 @@
-// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:payment/views/payment_details_view.dart';
 import 'package:payment/widgets/payment_method_list_view.dart';
 import '../widgets/custom_app_bar.dart';
 import '../widgets/custom_button.dart';
@@ -41,7 +39,7 @@ class HomeView extends StatelessWidget {
                     borderRadius: BorderRadius.circular(16)
                   ),
                   context: context,
-                  builder: (ctx) => CustomModalBottomSheet(),
+                  builder: (ctx) => const CustomModalBottomSheet(),
                 );
               },
             ),
@@ -53,22 +51,3 @@ class HomeView extends StatelessWidget {
   }
 }
  
-class CustomModalBottomSheet extends StatelessWidget {
-  const CustomModalBottomSheet({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 30),
-      width: double.infinity,
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          SizedBox(height: 62, child: PaymentMethodListView()),
-        ],
-      ),
-    );
-  }
-}
